@@ -60,8 +60,8 @@ all: main-build
 main-build: dp_test.elf secondary-outputs
 
 # Tool invocations
-dp_test.elf dp_test.map: $(OBJS) $(USER_OBJS) C:\Users\sunil\Desktop\FL\FARAZ_SIR_UAE\Thermostat\stm32_cube_ide_program\FL_DP\dp_test\STM32F401CCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "dp_test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\sunil\Desktop\FL\FARAZ_SIR_UAE\Thermostat\stm32_cube_ide_program\FL_DP\dp_test\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="dp_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+dp_test.elf dp_test.map: $(OBJS) $(USER_OBJS) C:\Users\sunil\Desktop\FL\FARAZ_SIR_UAE\DP\ SENSOR\ DESIGN\FARAZ_SIR_DP_SENSOR\dp_test\STM32F401CCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "dp_test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\sunil\Desktop\FL\FARAZ_SIR_UAE\DP SENSOR DESIGN\FARAZ_SIR_DP_SENSOR\dp_test\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="dp_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

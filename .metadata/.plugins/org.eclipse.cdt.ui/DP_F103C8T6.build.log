@@ -1,0 +1,17 @@
+23:12:00 **** Incremental Build of configuration Debug for project DP_F103C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/nrf_helper.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/nrf_helper.d" -MT"Core/Src/nrf_helper.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/nrf_helper.o"
+arm-none-eabi-gcc -o "DP_F103C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\sunil\Desktop\FL\FARAZ_SIR_UAE\DP SENSOR DESIGN\FARAZ_SIR_DP_SENSOR\DP_F103C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DP_F103C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DP_F103C8T6.elf
+ 
+arm-none-eabi-size   DP_F103C8T6.elf 
+arm-none-eabi-objdump -h -S  DP_F103C8T6.elf  > "DP_F103C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  21304	    136	   2048	  23488	   5bc0	DP_F103C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: DP_F103C8T6.list
+ 
+
+23:12:01 Build Finished. 0 errors, 0 warnings. (took 875ms)
+

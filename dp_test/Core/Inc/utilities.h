@@ -12,5 +12,10 @@
 #include <stdio.h>
 #include "main.h"
 #include "stm32f4xx_hal.h"
+#include "nrf_helper.h"
+
+void send_DP_sensor_value_to_gateway(void);
+void HANDLE_RECEIVED_MESSAGE_FROM_GATEWAY(void);
+
 
 #endif /* INC_UTILITIES_H_ */
