@@ -1,17 +1,17 @@
-01:12:53 **** Incremental Build of configuration Debug for project dp_test ****
+01:27:53 **** Incremental Build of configuration Debug for project dp_test ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/utilities.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/utilities.d" -MT"Core/Src/utilities.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/utilities.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "dp_test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sunil\Desktop\FL\FARAZ_SIR_UAE\DP SENSOR DESIGN\FARAZ_SIR_DP_SENSOR\dp_test\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="dp_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: dp_test.elf
  
 arm-none-eabi-size   dp_test.elf 
 arm-none-eabi-objdump -h -S  dp_test.elf  > "dp_test.list"
    text	   data	    bss	    dec	    hex	filename
-  22520	    136	   1992	  24648	   6048	dp_test.elf
+  22756	    132	   1988	  24876	   612c	dp_test.elf
 Finished building: default.size.stdout
  
 Finished building: dp_test.list
  
 
-01:12:54 Build Finished. 0 errors, 0 warnings. (took 1s.49ms)
+01:27:54 Build Finished. 0 errors, 0 warnings. (took 922ms)
 

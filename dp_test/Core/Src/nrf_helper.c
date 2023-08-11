@@ -21,13 +21,13 @@ void nrf_init(void) {
 	NRF24_begin(CE_PIN_GPIO_Port, CSN_PIN_Pin, CE_PIN_Pin, NRF_SPI_PORT);
 	nrf24_DebugUART_Init(huart2);
 	NRF24_setAutoAck(true);
-	NRF24_setChannel(node_channel_addr);
 	NRF24_setPayloadSize(32);
-	NRF24_openWritingPipe(target_pipe_addr);
-	NRF24_stopListening();
+//	NRF24_stopListening();
+//	NRF24_openWritingPipe(target_pipe_addr);
+//	NRF24_setChannel(node_channel_addr);
 	printRadioSettings();
 }
-void Switch_to_Transmitt_mode() {
+void Switch_to_Transmitt_mode(void) {
 	NRF24_stopListening();
 	NRF24_openWritingPipe(target_pipe_addr);
 	NRF24_setChannel(target_channel_addr);
@@ -38,7 +38,6 @@ void Switch_to_Receiver_mode(void) {
 	NRF24_startListening();
 }
 void TRANSMITT_UPDATE_TO_GATEWAY(char my_tx_data[]) {
-
 	for (int i = 0; i < +10; i++) {
 		if (!NRF24_write(my_tx_data, 32)) {
 			NRF24_write(my_tx_data, 32);

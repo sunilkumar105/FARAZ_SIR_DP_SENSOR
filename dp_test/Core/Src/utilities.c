@@ -13,7 +13,6 @@ void send_DP_sensor_value_to_gateway(void) {
 	HAL_ADC_PollForConversion(&hadc1, 100);
 	uint32_t adc_val = HAL_ADC_GetValue(&hadc1);
 	HAL_ADC_Stop(&hadc1);
-
 	char adc_str[32]; //UINT32_T TO CHAR ARRAY CONVERSION
 	sprintf(adc_str, "%lu", adc_val);
 	adc_str[6] = '\r';
@@ -21,5 +20,9 @@ void send_DP_sensor_value_to_gateway(void) {
 }
 void HANDLE_RECEIVED_MESSAGE_FROM_GATEWAY(void) {
 	//check for availability of message
-	//take action according to the message
+	if (NRF24_available()) {
+		char received_data_from_nodes[50];
+		NRF24_read(received_data_from_nodes, 32);
+		//take action according to the message
+	}
 }

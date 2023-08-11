@@ -18,6 +18,8 @@
 #include "MY_NRF24.h"
 
 void nrf_init(void);
+void Switch_to_Receiver_mode(void);
+void Switch_to_Transmitt_mode(void);
 void TRANSMITT_UPDATE_TO_GATEWAY(char my_tx_data[]);;
 void RECEIVED_MESSAGE_FROM_GATEWAY_IF_AVAILABLE(void);
 

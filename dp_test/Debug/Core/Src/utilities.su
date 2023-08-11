@@ -1,2 +1,2 @@
 ../Core/Src/utilities.c:11:6:send_DP_sensor_value_to_gateway	48	static
-../Core/Src/utilities.c:22:6:HANDLE_RECEIVED_MESSAGE_FROM_GATEWAY	4	static
+../Core/Src/utilities.c:21:6:HANDLE_RECEIVED_MESSAGE_FROM_GATEWAY	64	static
