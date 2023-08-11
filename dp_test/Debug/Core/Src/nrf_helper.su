@@ -1,0 +1,4 @@
+../Core/Src/nrf_helper.c:19:6:nrf_init	112	static
+../Core/Src/nrf_helper.c:29:6:Switch_to_Transmitt_mode	8	static
+../Core/Src/nrf_helper.c:34:6:Switch_to_Receiver_mode	8	static
+../Core/Src/nrf_helper.c:39:6:transmitt_update_to_gateway	48	static

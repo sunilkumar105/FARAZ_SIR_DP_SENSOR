@@ -1,0 +1,21 @@
+!SESSION 2023-08-11 22:34:30.657 -----------------------------------------------
+eclipse.buildId=Version 1.12.0
+java.version=11.0.17
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\sunil\Desktop\FL\FARAZ_SIR_UAE\DP SENSOR DESIGN\FARAZ_SIR_DP_SENSOR
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-08-11 22:34:45.414
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-08-11 22:34:45.461
+!MESSAGE Log4j2 initialized with config file C:\Users\sunil\Desktop\FL\FARAZ_SIR_UAE\DP SENSOR DESIGN\FARAZ_SIR_DP_SENSOR\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-08-11 22:34:53.070
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-08-11 22:39:03.343
+!MESSAGE Indexed 'DP_F103C8T6' (24 sources, 118 headers) in 6.91 sec: 9,297 declarations; 43,370 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (0.36%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-08-11 22:39:09.180
+!MESSAGE Indexed 'dp_test' (26 sources, 119 headers) in 5.71 sec: 10,354 declarations; 44,234 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.27%)
