@@ -1,0 +1,10 @@
+13:21:57 **** Incremental Build of configuration Debug for project DP_F401CCU6 ****
+make -j8 all 
+arm-none-eabi-size   DP_F401CCU6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19320	    112	   2224	  21656	   5498	DP_F401CCU6.elf
+Finished building: default.size.stdout
+ 
+
+13:21:57 Build Finished. 0 errors, 0 warnings. (took 325ms)
+
