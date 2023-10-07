@@ -1,10 +1,25 @@
-13:21:57 **** Incremental Build of configuration Debug for project DP_F401CCU6 ****
+20:50:26 **** Incremental Build of configuration Debug for project DP_F401CCU6 ****
 make -j8 all 
+arm-none-eabi-gcc "../Core/Src/utilities.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/utilities.d" -MT"Core/Src/utilities.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/utilities.o"
+../Core/Src/utilities.c: In function 'send_DP_sensor_value_to_gateway':
+../Core/Src/utilities.c:13:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   13 |         sprintf(buffer, "%u", PRESSURE);
+      |                          ~^   ~~~~~~~~
+      |                           |   |
+      |                           |   uint32_t {aka long unsigned int}
+      |                           unsigned int
+      |                          %lu
+arm-none-eabi-gcc -o "DP_F401CCU6.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sunil\Desktop\FL\FARAZ_SIR_UAE\DP SENSOR DESIGN\FARAZ_SIR_DP_SENSOR\DP_F401CCU6\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DP_F401CCU6.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DP_F401CCU6.elf
+ 
 arm-none-eabi-size   DP_F401CCU6.elf 
+arm-none-eabi-objdump -h -S  DP_F401CCU6.elf  > "DP_F401CCU6.list"
    text	   data	    bss	    dec	    hex	filename
-  19320	    112	   2224	  21656	   5498	DP_F401CCU6.elf
+  25244	    128	   2312	  27684	   6c24	DP_F401CCU6.elf
 Finished building: default.size.stdout
  
+Finished building: DP_F401CCU6.list
+ 
 
-13:21:57 Build Finished. 0 errors, 0 warnings. (took 325ms)
+20:50:27 Build Finished. 0 errors, 1 warnings. (took 982ms)
 

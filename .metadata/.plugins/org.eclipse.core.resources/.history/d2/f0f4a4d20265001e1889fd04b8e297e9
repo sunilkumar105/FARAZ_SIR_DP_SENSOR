@@ -1,0 +1,36 @@
+/*
+ * utilities.c
+ *
+ *  Created on: Aug 8, 2023
+ *      Author: sunil
+ */
+
+#include "utilities.h"
+
+uint8_t DP_SENSOR_ADDR = 0X25 << 1;
+uint32_t i2c_RETRY_TIME = 100;
+
+HAL_StatusTypeDef dp_sens_init(void) {
+	HAL_StatusTypeDef ret;
+	ret = HAL_I2C_IsDeviceReady(&DP_SENS_handletype_def, DP_SENSOR_ADDR, 2,
+			i2c_RETRY_TIME); // is device avaialble ?
+	if (ret != HAL_OK) {
+		return HAL_ERROR;
+	}
+	HAL_I2C_Mem_Write(&DP_SENS_handletype_def, DP_SENSOR_ADDR, 0X36, 1, 0X1E, 1, 100);
+	return HAL_OK;
+}
+
+void send_DP_sensor_value_to_gateway(void) {
+	int32_t DP_data = 0;
+	HAL_I2C_Master_Receive(&DP_SENS_handletype_def, DP_SENSOR_ADDR, pData, Size, Timeout)
+//	TRANSMITT_UPDATE_TO_GATEWAY(adc_str); //TRANSMITT MESSAGE TO GATEWAY
+}
+void HANDLE_RECEIVED_MESSAGE_FROM_GATEWAY(void) {
+//check for availability of message
+	if (NRF24_available()) {
+		char received_data_from_nodes[50];
+		NRF24_read(received_data_from_nodes, 32);
+		//take action according to the message
+	}
+}

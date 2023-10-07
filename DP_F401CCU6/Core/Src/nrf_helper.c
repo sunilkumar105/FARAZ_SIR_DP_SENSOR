@@ -22,9 +22,9 @@ void nrf_init(void) {
 	nrf24_DebugUART_Init(huart2);
 	NRF24_setAutoAck(true);
 	NRF24_setPayloadSize(32);
-//	NRF24_stopListening();
-//	NRF24_openWritingPipe(target_pipe_addr);
-//	NRF24_setChannel(node_channel_addr);
+	NRF24_stopListening();
+	NRF24_openWritingPipe(target_pipe_addr);
+	NRF24_setChannel(node_channel_addr);
 	printRadioSettings();
 }
 void Switch_to_Transmitt_mode(void) {
