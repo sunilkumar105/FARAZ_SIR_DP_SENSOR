@@ -60,8 +60,8 @@ all: main-build
 main-build: DP_F103C8T6.elf secondary-outputs
 
 # Tool invocations
-DP_F103C8T6.elf DP_F103C8T6.map: $(OBJS) $(USER_OBJS) C:\Users\sunil\Desktop\check_pull\FARAZ_SIR_DP_SENSOR\DP_F103C8T6\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "DP_F103C8T6.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\sunil\Desktop\check_pull\FARAZ_SIR_DP_SENSOR\DP_F103C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DP_F103C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+DP_F103C8T6.elf DP_F103C8T6.map: $(OBJS) $(USER_OBJS) C:\Users\sunil\Desktop\FARAZ_SIR\FARAZ_SIR_DP_SENSOR\DP_F103C8T6\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "DP_F103C8T6.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\sunil\Desktop\FARAZ_SIR\FARAZ_SIR_DP_SENSOR\DP_F103C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DP_F103C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
