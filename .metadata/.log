@@ -3123,3 +3123,33 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2023-10-16 22:19:37.144 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-10-16 22:20:01.610
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-16 22:20:01.619
+!MESSAGE Log4j2 initialized with config file C:\Users\sunil\Desktop\FL\FARAZ_SIR_UAE\DP SENSOR DESIGN\FARAZ_SIR_DP_SENSOR\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-16 22:20:12.582
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-12-09 17:21:52.177 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\sunil\Desktop\FL\FARAZ_SIR_UAE\DP SENSOR DESIGN\FARAZ_SIR_DP_SENSOR
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-12-09 17:22:00.393
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-12-09 17:22:00.407
+!MESSAGE Log4j2 initialized with config file C:\Users\sunil\Desktop\FL\FARAZ_SIR_UAE\DP SENSOR DESIGN\FARAZ_SIR_DP_SENSOR\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-12-09 17:22:11.564
+!MESSAGE Started RMI Server, listening on port 41337
