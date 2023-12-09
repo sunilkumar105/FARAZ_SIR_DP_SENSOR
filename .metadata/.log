@@ -1,20 +1,20 @@
-!SESSION 2023-12-09 17:34:27.273 -----------------------------------------------
+!SESSION 2023-12-09 17:56:09.283 -----------------------------------------------
 eclipse.buildId=Version 1.13.2
 java.version=17.0.6
 java.vendor=Eclipse Adoptium
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\sunil\Desktop\FARAZ_SIR\FARAZ_SIR_DP_SENSOR
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-12-09 17:34:36.119
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-12-09 17:56:17.784
 !MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-12-09 17:34:36.137
-!MESSAGE Log4j2 initialized with config file C:\Users\sunil\Desktop\check_pull\FARAZ_SIR_DP_SENSOR\.metadata\.log4j2.xml
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-12-09 17:56:17.799
+!MESSAGE Log4j2 initialized with config file C:\Users\sunil\Desktop\FARAZ_SIR\FARAZ_SIR_DP_SENSOR\.metadata\.log4j2.xml
 
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-12-09 17:34:40.105
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-12-09 17:56:22.162
 !MESSAGE Started RMI Server, listening on port 41337
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.240
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.652
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.runtime.CoreException: Error running Builtin Specs Detector
@@ -34,7 +34,7 @@ Caused by: java.lang.Exception: Project 'DP_F103C8T6' is not open.
 	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
 	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
 	... 9 more
-!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.241
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.654
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/DP_F103C8T6)[372]: java.lang.Exception: Project 'DP_F103C8T6' is not open.
@@ -49,7 +49,7 @@ org.eclipse.core.internal.resources.ResourceException(/DP_F103C8T6)[372]: java.l
 	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:527)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:35:20.241
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:56:59.654
 !MESSAGE Project 'DP_F103C8T6' is not open.
 !STACK 0
 java.lang.Exception: Project 'DP_F103C8T6' is not open.
@@ -65,7 +65,7 @@ java.lang.Exception: Project 'DP_F103C8T6' is not open.
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.244
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.657
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.runtime.CoreException: Error running Builtin Specs Detector
@@ -85,7 +85,7 @@ Caused by: java.lang.Exception: Project 'DP_F103C8T6' is not open.
 	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
 	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
 	... 9 more
-!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.244
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.657
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/DP_F103C8T6)[372]: java.lang.Exception: Project 'DP_F103C8T6' is not open.
@@ -100,7 +100,7 @@ org.eclipse.core.internal.resources.ResourceException(/DP_F103C8T6)[372]: java.l
 	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:527)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:35:20.244
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:56:59.657
 !MESSAGE Project 'DP_F103C8T6' is not open.
 !STACK 0
 java.lang.Exception: Project 'DP_F103C8T6' is not open.
@@ -116,7 +116,7 @@ java.lang.Exception: Project 'DP_F103C8T6' is not open.
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.260
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.674
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.runtime.CoreException: Error running Builtin Specs Detector
@@ -136,7 +136,7 @@ Caused by: java.lang.Exception: Project 'DP_F103C8T6' is not open.
 	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
 	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
 	... 9 more
-!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.260
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.674
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/DP_F103C8T6)[372]: java.lang.Exception: Project 'DP_F103C8T6' is not open.
@@ -151,7 +151,7 @@ org.eclipse.core.internal.resources.ResourceException(/DP_F103C8T6)[372]: java.l
 	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:527)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:35:20.261
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:56:59.674
 !MESSAGE Project 'DP_F103C8T6' is not open.
 !STACK 0
 java.lang.Exception: Project 'DP_F103C8T6' is not open.
@@ -167,7 +167,7 @@ java.lang.Exception: Project 'DP_F103C8T6' is not open.
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.265
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.677
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.runtime.CoreException: Error running Builtin Specs Detector
@@ -187,7 +187,7 @@ Caused by: java.lang.Exception: Project 'DP_F103C8T6' is not open.
 	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
 	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
 	... 9 more
-!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.265
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.677
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/DP_F103C8T6)[372]: java.lang.Exception: Project 'DP_F103C8T6' is not open.
@@ -202,7 +202,7 @@ org.eclipse.core.internal.resources.ResourceException(/DP_F103C8T6)[372]: java.l
 	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:527)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:35:20.265
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:56:59.677
 !MESSAGE Project 'DP_F103C8T6' is not open.
 !STACK 0
 java.lang.Exception: Project 'DP_F103C8T6' is not open.
@@ -218,7 +218,7 @@ java.lang.Exception: Project 'DP_F103C8T6' is not open.
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.294
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.701
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.runtime.CoreException: Error running Builtin Specs Detector
@@ -238,7 +238,7 @@ Caused by: java.lang.Exception: Project 'DP_F401CCU6' is not open.
 	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
 	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
 	... 9 more
-!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.294
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.702
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/DP_F401CCU6)[372]: java.lang.Exception: Project 'DP_F401CCU6' is not open.
@@ -253,7 +253,7 @@ org.eclipse.core.internal.resources.ResourceException(/DP_F401CCU6)[372]: java.l
 	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:527)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:35:20.294
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:56:59.702
 !MESSAGE Project 'DP_F401CCU6' is not open.
 !STACK 0
 java.lang.Exception: Project 'DP_F401CCU6' is not open.
@@ -269,7 +269,7 @@ java.lang.Exception: Project 'DP_F401CCU6' is not open.
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.297
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.705
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.runtime.CoreException: Error running Builtin Specs Detector
@@ -289,7 +289,7 @@ Caused by: java.lang.Exception: Project 'DP_F401CCU6' is not open.
 	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
 	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
 	... 9 more
-!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.298
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.706
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/DP_F401CCU6)[372]: java.lang.Exception: Project 'DP_F401CCU6' is not open.
@@ -304,7 +304,7 @@ org.eclipse.core.internal.resources.ResourceException(/DP_F401CCU6)[372]: java.l
 	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:527)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:35:20.298
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:56:59.706
 !MESSAGE Project 'DP_F401CCU6' is not open.
 !STACK 0
 java.lang.Exception: Project 'DP_F401CCU6' is not open.
@@ -320,7 +320,7 @@ java.lang.Exception: Project 'DP_F401CCU6' is not open.
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.305
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.713
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.runtime.CoreException: Error running Builtin Specs Detector
@@ -340,7 +340,7 @@ Caused by: java.lang.Exception: Project 'DP_F401CCU6' is not open.
 	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
 	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
 	... 9 more
-!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.305
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.714
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/DP_F401CCU6)[372]: java.lang.Exception: Project 'DP_F401CCU6' is not open.
@@ -355,7 +355,7 @@ org.eclipse.core.internal.resources.ResourceException(/DP_F401CCU6)[372]: java.l
 	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:527)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:35:20.306
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:56:59.714
 !MESSAGE Project 'DP_F401CCU6' is not open.
 !STACK 0
 java.lang.Exception: Project 'DP_F401CCU6' is not open.
@@ -371,7 +371,7 @@ java.lang.Exception: Project 'DP_F401CCU6' is not open.
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.308
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.718
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.runtime.CoreException: Error running Builtin Specs Detector
@@ -391,7 +391,7 @@ Caused by: java.lang.Exception: Project 'DP_F401CCU6' is not open.
 	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
 	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
 	... 9 more
-!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:35:20.308
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2023-12-09 17:56:59.718
 !MESSAGE Error running Builtin Specs Detector
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/DP_F401CCU6)[372]: java.lang.Exception: Project 'DP_F401CCU6' is not open.
@@ -406,7 +406,7 @@ org.eclipse.core.internal.resources.ResourceException(/DP_F401CCU6)[372]: java.l
 	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:527)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:35:20.308
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2023-12-09 17:56:59.718
 !MESSAGE Project 'DP_F401CCU6' is not open.
 !STACK 0
 java.lang.Exception: Project 'DP_F401CCU6' is not open.
@@ -422,5 +422,5 @@ java.lang.Exception: Project 'DP_F401CCU6' is not open.
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.cdt.core 1 0 2023-12-09 17:35:42.544
-!MESSAGE Indexed 'DP_F103C8T6' (25 sources, 120 headers) in 4.79 sec: 10,305 declarations; 55,852 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (0.28%)
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-09 17:57:21.440
+!MESSAGE Indexed 'DP_F103C8T6' (25 sources, 120 headers) in 4.42 sec: 10,305 declarations; 55,852 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (0.28%)
