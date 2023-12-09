@@ -1,2 +1,2 @@
-utilities.c:11:6:send_DP_sensor_value_to_gateway	1
-utilities.c:23:6:HANDLE_RECEIVED_MESSAGE_FROM_GATEWAY	1
+../Core/Src/utilities.c:11:6:send_DP_sensor_value_to_gateway	1
+../Core/Src/utilities.c:23:6:HANDLE_RECEIVED_MESSAGE_FROM_GATEWAY	1
