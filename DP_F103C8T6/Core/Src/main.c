@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 #include "nrf_helper.h"
 #include "utilities.h"
+#include "ee.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -68,7 +69,9 @@ static void MX_I2C1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+uint8_t rx_buffer_pos;
+uint8_t rx_data[2];
+char Command_Buffer[20];
 /* USER CODE END 0 */
 
 /**
@@ -104,6 +107,16 @@ int main(void) {
 	MX_ADC1_Init();
 	MX_I2C1_Init();
 	/* USER CODE BEGIN 2 */
+
+	HAL_UART_Receive_IT(&huart2, (uint8_t*) rx_data, 1); //INITIALIZE THE INTERRUPT
+
+	uint8_t datawrite[4] = { 'A', 'B', 'C', 'D' };
+	ee_write(_EE_ADDR_INUSE, datawrite, 4);
+	uint8_t dataread[4];
+	ee_read(_EE_ADDR_INUSE, dataread, 4);
+	HAL_Delay(1000);
+	ee_format_sector();
+
 	nrf_init();
 	/* USER CODE END 2 */
 
@@ -380,7 +393,33 @@ static void MX_GPIO_Init(void) {
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+	/* Prevent unused argument(s) compilation warning */
+	UNUSED(huart);
+	/* NOTE: This function should not be modified, when the callback is needed,
+	 the HAL_UART_RxCpltCallback could be implemented in the user file
+	 */
+	if (huart->Instance == USART2) {
+		if (rx_data[0] != '/') { //if it is not equal to 'COMMAND END' then write data into INCREMENTED POS of rx_buffer
+			Command_Buffer[rx_buffer_pos++] = rx_data[0];
+		} else { // HERE IT MEANS if(rx_data[0] == '/') IF it is equal to 'COMMAND END' then clear the buffer, compare data and move on
+			Command_Buffer[rx_buffer_pos++] = '\0'; //ADDING NULL TERMINATOR AT THE END
+			HAL_UART_Transmit(&huart2, (const uint8_t*) "\n\r", 2, 100); //PRINT NEW LINE AND CARRRIAGE RETURN
+			Process_Received_Command_From_Uart(Command_Buffer);
+			rx_buffer_pos = 0;
+			//AFTER USING THE DATA CLEAR THE RX BUFFER (Command_Buffer)
+			uint8_t i;
+			if (rx_buffer_pos == 0) { //RESET THE BUFFER ONLY WHEN RX { BUFFER == 0 }
+				for (i = 0; i < 20; i++)
+					Command_Buffer[i] = 0;
+			}
+		}
+		HAL_UART_Receive_IT(&huart2, rx_data, 1);
+		HAL_UART_Transmit(&huart2, (const uint8_t*) rx_data, 1, 100); //PRINT THE RECEIVED CHARACTER
 
+		//PROCESS RECEIVED DATA
+	}
+}
 /* USER CODE END 4 */
 
 /**
